@@ -1,0 +1,8 @@
+﻿extends layout
+
+block content
+    h1= title
+    form#formAddCust(name="addcust",method="post",action="/addcust")
+        input#inputCustName(type="text", placeholder="Cust Name", name="custname")
+        input#inputAddress(type="text", placeholder="address", name="address")
+        button#btnSubmit(type="submit") submit

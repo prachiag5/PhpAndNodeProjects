@@ -1,0 +1,7 @@
+﻿extends layout
+
+block content
+    h1= title
+    form#formDelcust(name="delcust",method="post",action="/delcust")
+        input#inputCustName(type="text", placeholder="Cust Name", name="custname")
+        button#btnSubmit(type="submit") submit
